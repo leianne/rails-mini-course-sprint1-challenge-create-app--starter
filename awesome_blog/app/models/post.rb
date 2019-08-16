@@ -1,4 +1,7 @@
 require_relative 'word_counter'
-class Post < ApplicationRecord
+require_relative 'app_stats'
+
+class Post < ApplicationRecord 
     include WordCounter
+    include Publishable
 end
